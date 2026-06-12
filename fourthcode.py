@@ -3,20 +3,21 @@ sit1 = 'Aprovado.'
 sit2 = 'Reprovado.'
 codigo_registro = 404
 
-access = input('Digite seu o código de acesso: ')
-if "404" in access:
-    print('Seja bem-vindo!')
-else:
-    print('Acesso negado.')
-    exit() 
+while True:
 
-while True: 
+    access = input('Digite seu o código de acesso: ')
+    if "404" in access:
+        print('Seja bem-vindo!')
+    else:
+        print('Acesso negado.')
+        break
 
     aluno = input('Digite o nome do aluno: ')
     calculo = input(f'Deseja calcular a nota final de {aluno}? (s/n): ')
 
     if calculo == 'n':
         print('Tudo bem!')
+        print('Consulta finalizada.')
         break
 
     elif calculo == 's':
@@ -30,6 +31,10 @@ while True:
             print(f'A situação de {aluno} é: {sit1}')
         else:
             print(f'A situação de {aluno} é: {sit2}')
+    
+    else:
+        print('Comando não reconhecido, LARiSSA.')
+        break
 
     refazer_calculo = input('Deseja consultar outra nota? (s/n): ')
     if refazer_calculo == 's':
@@ -37,4 +42,7 @@ while True:
     elif refazer_calculo == 'n':
         print('Tudo bem!')
         print('Consulta finalizada.')
+        break
+    else:
+        print('Comando não reconhecido, LARiSSA.')
         break
