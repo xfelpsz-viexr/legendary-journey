@@ -8,6 +8,7 @@ if "404" in access:
     print('Seja bem-vindo!')
 else:
     print('Acesso negado.')
+    exit() 
 
 while True: 
 
