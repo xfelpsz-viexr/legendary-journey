@@ -15,12 +15,12 @@ while True:
     aluno = input('Digite o nome do aluno: ')
     calculo = input(f'Deseja calcular a nota final de {aluno}? (s/n): ')
 
-    if calculo == 'n':
+    if calculo == 'n' or calculo == 'N':
         print('Tudo bem!')
         print('Consulta finalizada.')
         break
 
-    elif calculo == 's':
+    elif calculo == 's' or calculo == 'S':
         nota_aluno = print('Digite a nota do aluno:')
         nota1 = int(input('Nota 1trim: '))
         nota2 = int(input('Nota 2trim: '))
@@ -33,16 +33,16 @@ while True:
             print(f'A situação de {aluno} é: {sit2}')
     
     else:
-        print('Comando não reconhecido, LARiSSA.')
+        print('Comando não reconhecido.')
         break
 
     refazer_calculo = input('Deseja consultar outra nota? (s/n): ')
-    if refazer_calculo == 's':
+    if refazer_calculo == 's' or refazer_calculo == 'S':
         ()
-    elif refazer_calculo == 'n':
+    elif refazer_calculo == 'n' or refazer_calculo == 'N':
         print('Tudo bem!')
         print('Consulta finalizada.')
         break
     else:
-        print('Comando não reconhecido, LARiSSA.')
+        print('Comando não reconhecido.')
         break
